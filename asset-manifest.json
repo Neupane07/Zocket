@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Zocket/static/css/main.c638cf9c.chunk.css",
-    "main.js": "/Zocket/static/js/main.730e11cc.chunk.js",
-    "main.js.map": "/Zocket/static/js/main.730e11cc.chunk.js.map",
+    "main.js": "/Zocket/static/js/main.80e3ea3d.chunk.js",
+    "main.js.map": "/Zocket/static/js/main.80e3ea3d.chunk.js.map",
     "runtime-main.js": "/Zocket/static/js/runtime-main.4b3d60d7.js",
     "runtime-main.js.map": "/Zocket/static/js/runtime-main.4b3d60d7.js.map",
     "static/css/2.c490997a.chunk.css": "/Zocket/static/css/2.c490997a.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.c490997a.chunk.css",
     "static/js/2.d7a38338.chunk.js",
     "static/css/main.c638cf9c.chunk.css",
-    "static/js/main.730e11cc.chunk.js"
+    "static/js/main.80e3ea3d.chunk.js"
   ]
 }
