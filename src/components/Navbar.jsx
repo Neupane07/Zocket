@@ -26,22 +26,22 @@ const Navbar = () => {
             id="navmenu">
             <ul className="navbar-nav ms-auto align-items-start">
               <li className="nav-item me-4">
-                <a href="/#services" className="nav-link">
+                <a href="#services" className="nav-link">
                   Services
                 </a>
               </li>
               <li className="nav-item me-4">
-                <a href="/#whyus" className="nav-link">
+                <a href="#whyus" className="nav-link">
                   Why Us
                 </a>
               </li>
               <li className="nav-item me-4">
-                <a href="/#about" className="nav-link">
+                <a href="#about" className="nav-link">
                   About
                 </a>
               </li>
               <li className="nav-item me-4">
-                <a href="/#pricing" className="nav-link">
+                <a href="#pricing" className="nav-link">
                   Pricing
                 </a>
               </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <a
-                  href="/#earlyacess"
+                  href="#earlyacess"
                   className="nav-link btn btn-primary rounded text-light py-1 px-3">
                   Get Early Access
                 </a>

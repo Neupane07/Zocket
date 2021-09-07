@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Zocket/static/css/main.c638cf9c.chunk.css",
-    "main.js": "/Zocket/static/js/main.80e3ea3d.chunk.js",
-    "main.js.map": "/Zocket/static/js/main.80e3ea3d.chunk.js.map",
+    "main.js": "/Zocket/static/js/main.3528eb0c.chunk.js",
+    "main.js.map": "/Zocket/static/js/main.3528eb0c.chunk.js.map",
     "runtime-main.js": "/Zocket/static/js/runtime-main.4b3d60d7.js",
     "runtime-main.js.map": "/Zocket/static/js/runtime-main.4b3d60d7.js.map",
     "static/css/2.c490997a.chunk.css": "/Zocket/static/css/2.c490997a.chunk.css",
-    "static/js/2.d7a38338.chunk.js": "/Zocket/static/js/2.d7a38338.chunk.js",
-    "static/js/2.d7a38338.chunk.js.map": "/Zocket/static/js/2.d7a38338.chunk.js.map",
+    "static/js/2.75c12993.chunk.js": "/Zocket/static/js/2.75c12993.chunk.js",
+    "static/js/2.75c12993.chunk.js.map": "/Zocket/static/js/2.75c12993.chunk.js.map",
     "index.html": "/Zocket/index.html",
     "static/css/2.c490997a.chunk.css.map": "/Zocket/static/css/2.c490997a.chunk.css.map",
     "static/css/main.c638cf9c.chunk.css.map": "/Zocket/static/css/main.c638cf9c.chunk.css.map",
-    "static/js/2.d7a38338.chunk.js.LICENSE.txt": "/Zocket/static/js/2.d7a38338.chunk.js.LICENSE.txt",
+    "static/js/2.75c12993.chunk.js.LICENSE.txt": "/Zocket/static/js/2.75c12993.chunk.js.LICENSE.txt",
     "static/media/adcampaign.292e028b.png": "/Zocket/static/media/adcampaign.292e028b.png",
     "static/media/calls.28f89d6b.png": "/Zocket/static/media/calls.28f89d6b.png",
     "static/media/expertise.2e49011e.png": "/Zocket/static/media/expertise.2e49011e.png",
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.4b3d60d7.js",
     "static/css/2.c490997a.chunk.css",
-    "static/js/2.d7a38338.chunk.js",
+    "static/js/2.75c12993.chunk.js",
     "static/css/main.c638cf9c.chunk.css",
-    "static/js/main.80e3ea3d.chunk.js"
+    "static/js/main.3528eb0c.chunk.js"
   ]
 }
