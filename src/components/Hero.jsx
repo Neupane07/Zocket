@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import illustration from "../assets/illustration.png";
-import validator from "validator";
 import smallestYellowBall from "../assets/smallestYellowBall.png";
 import smallYellowBall from "../assets/smallYellowBall.png";
 import heroBlueBall from "../assets/heroBlueBall.png";
 import yellowTriangle from "../assets/yellowTriangle.png";
+import validator from "validator";
+import axios from "axios";
 const Hero = () => {
   const [email, setEmail] = useState("");
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validator.isEmail(email)) {
+      const { data } = await axios.get("http://localhost:9000/register");
+      console.log(data);
       alert("valid email");
     } else {
       alert("invalid email");

@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import backgroundWave from "../assets/background-wave.png";
 import envelope from "../assets/envelope.png";
+import validator from "validator";
+import axios from "axios";
 const MailSubscribe = () => {
+  const [email, setEmail] = useState("");
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validator.isEmail(email)) {
+      const { data } = await axios.get("http://localhost:9000/register");
+      console.log(data);
+      alert("valid email");
+    } else {
+      alert("invalid email");
+    }
+  };
   return (
     <section className="py-5">
       <div className="container">
-        <img className="img-fluid w-100" src={backgroundWave} alt="" />
-        <div className="d-flex align-items-center justify-content-around">
+        <div
+          style={{
+            background: `url(${backgroundWave})`,
+            backgroundSize: "cover",
+            borderRadius: "4px",
+            objectFit: "cover",
+          }}
+          className="d-flex align-items-center justify-content-around envelope-container">
           <div className="my-5">
-            <img src={envelope} alt="" />
+            <img className="d-none d-md-block" src={envelope} alt="" />
           </div>
           <div>
             <h3 className="envelope-text">
@@ -16,18 +38,19 @@ const MailSubscribe = () => {
               when we launch!
             </h3>
             <div className="input-group mb-3">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Your email address"
-                aria-label="Recipient's username"
-                aria-describedby="button-addon2"
-              />
+              <form>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Your email address"
+                  onChange={handleChange}
+                />
+              </form>
               <button
                 style={{ backgroundColor: "#0A286B" }}
                 className="btn btn-primary"
                 type="button"
-                id="button-addon2">
+                onClick={handleSubmit}>
                 Get Early Access
               </button>
             </div>
