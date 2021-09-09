@@ -3,7 +3,10 @@ import backgroundWave from "../assets/background-wave.png";
 import envelope from "../assets/envelope.png";
 import validator from "validator";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 const MailSubscribe = () => {
+  const history = useHistory();
+
   const [email, setEmail] = useState("");
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -11,11 +14,23 @@ const MailSubscribe = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validator.isEmail(email)) {
-      const { data } = await axios.get("http://localhost:9000/register");
+      const { data } = await axios.post(
+        "https://zocket-assignment-3.herokuapp.com/register",
+        {
+          email,
+        }
+      );
       console.log(data);
-      alert("valid email");
+      if (data.rowCount) {
+        alert("You have been registered");
+        history.push(`/${data.id}`);
+      } else {
+        if (data.code === "23505") {
+          alert("E-mail already registered, Please provide new one");
+        }
+      }
     } else {
-      alert("invalid email");
+      alert("Invalid email");
     }
   };
   return (
@@ -38,7 +53,7 @@ const MailSubscribe = () => {
               when we launch!
             </h3>
             <div className="input-group mb-3">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <input
                   type="text"
                   className="form-control"

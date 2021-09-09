@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Zocket/static/css/main.78728ab8.chunk.css",
+    "main.js": "/Zocket/static/js/main.10b81aa2.chunk.js",
+    "main.js.map": "/Zocket/static/js/main.10b81aa2.chunk.js.map",
+    "runtime-main.js": "/Zocket/static/js/runtime-main.4b3d60d7.js",
+    "runtime-main.js.map": "/Zocket/static/js/runtime-main.4b3d60d7.js.map",
+    "static/css/2.9fd07369.chunk.css": "/Zocket/static/css/2.9fd07369.chunk.css",
+    "static/js/2.933c7381.chunk.js": "/Zocket/static/js/2.933c7381.chunk.js",
+    "static/js/2.933c7381.chunk.js.map": "/Zocket/static/js/2.933c7381.chunk.js.map",
+    "index.html": "/Zocket/index.html",
+    "static/css/2.9fd07369.chunk.css.map": "/Zocket/static/css/2.9fd07369.chunk.css.map",
+    "static/css/main.78728ab8.chunk.css.map": "/Zocket/static/css/main.78728ab8.chunk.css.map",
+    "static/js/2.933c7381.chunk.js.LICENSE.txt": "/Zocket/static/js/2.933c7381.chunk.js.LICENSE.txt",
+    "static/media/adcampaign.292e028b.png": "/Zocket/static/media/adcampaign.292e028b.png",
+    "static/media/calls.28f89d6b.png": "/Zocket/static/media/calls.28f89d6b.png",
+    "static/media/expertise.2e49011e.png": "/Zocket/static/media/expertise.2e49011e.png",
+    "static/media/illustration.24a21e11.png": "/Zocket/static/media/illustration.24a21e11.png",
+    "static/media/slick-theme.css": "/Zocket/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b3d60d7.js",
+    "static/css/2.9fd07369.chunk.css",
+    "static/js/2.933c7381.chunk.js",
+    "static/css/main.78728ab8.chunk.css",
+    "static/js/main.10b81aa2.chunk.js"
+  ]
+}

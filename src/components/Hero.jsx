@@ -6,7 +6,10 @@ import heroBlueBall from "../assets/heroBlueBall.png";
 import yellowTriangle from "../assets/yellowTriangle.png";
 import validator from "validator";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 const Hero = () => {
+  const history = useHistory();
+
   const [email, setEmail] = useState("");
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -14,11 +17,23 @@ const Hero = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validator.isEmail(email)) {
-      const { data } = await axios.get("http://localhost:9000/register");
+      const { data } = await axios.post(
+        "https://zocket-assignment-3.herokuapp.com/register",
+        {
+          email,
+        }
+      );
       console.log(data);
-      alert("valid email");
+      if (data.rowCount) {
+        alert("You have been registered");
+        history.push(`/${data.id}`);
+      } else {
+        if (data.code === "23505") {
+          alert("E-mail already registered, Please provide new one");
+        }
+      }
     } else {
-      alert("invalid email");
+      alert("Invalid email");
     }
   };
 
@@ -57,14 +72,15 @@ const Hero = () => {
               <br /> skyrocket your digital business.
             </p>
             <div className="input-group mb-3">
-              <form onSubmit={handleSubmit}></form>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Your email address"
-                onChange={handleChange}
-                style={{ background: "#F4F5F4" }}
-              />
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Your email address"
+                  onChange={handleChange}
+                  style={{ background: "#F4F5F4" }}
+                />
+              </form>
               <button
                 className="btn btn-primary"
                 type="button"

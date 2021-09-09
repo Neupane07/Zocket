@@ -168,3 +168,18 @@ footer p {
   opacity: 0.75;
   color: #0f6eff !important;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .tailor h1 {
+    font-size: 32px;
+  }
+  .tailor h3 {
+    font-size: 20px;
+  }
+  .tailor p {
+    line-height: 20px;
+  }
+}
