@@ -11,10 +11,10 @@ const App = () => {
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/Zocket">
             <HomePage />
           </Route>
-          <Route path="/:id" children={<Registered />} />
+          <Route path="/Zocket/:id" children={<Registered />} />
         </Switch>
       </Router>
     </>

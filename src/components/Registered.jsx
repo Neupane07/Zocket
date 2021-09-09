@@ -40,7 +40,7 @@ function Success({ email }) {
             <br />
             We have sent you an email at {email}
           </p>
-          <Link className="btn btn-primary" to="/">
+          <Link className="btn btn-primary" to="/Zocket">
             Go back to homepage
           </Link>
         </div>
@@ -57,7 +57,7 @@ function Failure() {
         style={{ height: "100vh" }}>
         <div className="">
           <h5 className="">We cannot find what you're looking for</h5>
-          <Link className="btn btn-primary" to="/">
+          <Link className="btn btn-primary" to="/Zocket">
             Go back to homepage
           </Link>
         </div>

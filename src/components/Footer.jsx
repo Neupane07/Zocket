@@ -7,6 +7,7 @@ import send from "../assets/send.png";
 import validator from "validator";
 import axios from "axios";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const history = useHistory();
@@ -27,7 +28,7 @@ const Footer = () => {
       console.log(data);
       if (data.rowCount) {
         alert("You have been registered");
-        history.push(`/${data.id}`);
+        history.push(`/Zocket/${data.id}`);
       } else {
         if (data.code === "23505") {
           alert("E-mail already registered, Please provide new one");
@@ -60,39 +61,39 @@ const Footer = () => {
           <div className="col-md-1"></div>
           <div className="col-md-2">
             <p className="footer-heading">Company</p>
-            <a className="d-block f-link mt-5" href="/#">
+            <Link className="d-block f-link mt-5" to="/Zocket">
               About Us
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Blog
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Contact Us
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Pricing
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Testimonials
-            </a>
+            </Link>
           </div>
           <div className="col-md-2">
             <p className="footer-heading">Support</p>
-            <a className="d-block f-link mt-5" href="/#">
+            <Link className="d-block f-link mt-5" to="/Zocket">
               Help Center
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Tems Of Service
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Legal
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Privacy Policy
-            </a>
-            <a className="d-block f-link my-3" href="/#">
+            </Link>
+            <Link className="d-block f-link my-3" to="/Zocket">
               Status
-            </a>
+            </Link>
           </div>
           <div className="col-md-4">
             <p className="footer-heading text-primary">Get Early Access</p>

@@ -26,7 +26,7 @@ const Hero = () => {
       console.log(data);
       if (data.rowCount) {
         alert("You have been registered");
-        history.push(`/${data.id}`);
+        history.push(`/Zocket/${data.id}`);
       } else {
         if (data.code === "23505") {
           alert("E-mail already registered, Please provide new one");

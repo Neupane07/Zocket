@@ -5,7 +5,7 @@ import expertise from "../assets/expertise.png";
 
 const WhyUs = () => {
   return (
-    <section className="py-5">
+    <section className="py-5" id="whyus">
       <div className="container whyus lh-lg">
         <h1 className="text-center mb-5 heading-text">Why Us</h1>
         <div className="d-flex justify-content-evenly">

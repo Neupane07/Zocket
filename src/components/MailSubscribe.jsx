@@ -23,7 +23,7 @@ const MailSubscribe = () => {
       console.log(data);
       if (data.rowCount) {
         alert("You have been registered");
-        history.push(`/${data.id}`);
+        history.push(`/Zocket/${data.id}`);
       } else {
         if (data.code === "23505") {
           alert("E-mail already registered, Please provide new one");
@@ -34,7 +34,7 @@ const MailSubscribe = () => {
     }
   };
   return (
-    <section className="py-5">
+    <section className="py-5" id="contact">
       <div className="container">
         <div
           style={{
